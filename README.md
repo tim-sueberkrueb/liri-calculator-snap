@@ -22,7 +22,7 @@ QTDIR=<path-to-qt> snapcraft
 From your build directory, run:
 
 ```sh
-sudo snap install --dangerous liri-platform*.snap
+sudo snap install --dangerous liri-calculator*.snap
 sudo snap connect liri-calculator:platform liri-platform:platform
 ```
 [liri-calculator-gh]: http://github.com/lirios/calculator
