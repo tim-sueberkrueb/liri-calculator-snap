@@ -33,8 +33,8 @@ platform_version=$(exec $RUNTIME/bin/yaml r $RUNTIME/meta/snap.yaml version)
 expected_version=$(exec $RUNTIME/bin/yaml r $SNAP/meta/snap.yaml plugs.platform.minimum-version)
 if version_lt $platform_version $expected_version; then
     dialog_title="Liri Platform Update Required"
-    dialog_message="Your currently installed Liri Platform snap version ($platform_version) "
-    dialog_message+="does not fit the requirements of this application ($expected_version). "
+    dialog_message="This application requires a newer Liri Platform snap version ($expected_version). "
+    dialog_message+="You have version $platform_version installed. "
     dialog_message+="Please update the Liri Platform snap package using your software "
     dialog_message+="store application or run the following command in a terminal:"
     dialog_code="snap refresh $platform_snap_name # use sudo if necessary"
