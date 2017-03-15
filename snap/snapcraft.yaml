@@ -13,6 +13,7 @@ plugs:
     content: liri-platform0
     target: liri-platform
     default-provider: liri-platform0
+    minimum-version: "0.10.0"
 
 apps:
   liri-calculator:
