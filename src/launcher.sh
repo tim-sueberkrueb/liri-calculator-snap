@@ -9,7 +9,7 @@ if [ -d $SNAP/liri-platform ]; then
     echo ""
     echo "You can do this with those commands:"
     echo "snap install liri-platform"
-    echo "snap connect $SNAP_NAME:platform liri-platform:platform"
+    echo "snap connect $SNAP_NAME:platform liri-platform0:platform"
     exit 1
   fi
 fi

@@ -10,9 +10,9 @@ confinement: strict
 plugs:
   platform:
     interface: content
-    content: liri-platform_0.1.0
+    content: liri-platform0
     target: liri-platform
-    default-provider: liri-platform
+    default-provider: liri-platform0
 
 apps:
   liri-calculator:
